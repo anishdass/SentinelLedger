@@ -1,6 +1,7 @@
 services:
   postgres:
     image: 'postgres:latest'
+    container_name: 'sentinel_ledger_db'
     environment:
       - 'POSTGRES_DB=sentinel_ledger_db'
       - 'POSTGRES_PASSWORD=${POSTGRES_PASSWORD}'
