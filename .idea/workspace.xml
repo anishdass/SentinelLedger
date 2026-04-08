@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f62a555-e1f4-42e8-8509-9b3ec15482b9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/sentinel/ledger/config/DataInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/sentinel/ledger/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/sentinel/ledger/controller/LedgerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/sentinel/ledger/dto/TransferRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/sentinel/ledger/service/LedgerService.java" afterDir="false" />
+    <list default="true" id="4f62a555-e1f4-42e8-8509-9b3ec15482b9" name="Changes" comment="feat: finalize backend connectivity for phase 3&#10;&#10;Implemented account retrieval endpoints and unlocked CORS/Security for frontend integration.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/sentinel/ledger/entity/JournalEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/sentinel/ledger/entity/JournalEntry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/sentinel/ledger/repository/JavaEntryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/sentinel/ledger/repository/JournalEntryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/sentinel/ledger/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/sentinel/ledger/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/sentinel/ledger/controller/LedgerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/sentinel/ledger/controller/LedgerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/sentinel/ledger/service/LedgerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/sentinel/ledger/service/LedgerService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +47,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -153,12 +148,32 @@
       <option name="project" value="LOCAL" />
       <updated>1774975397681</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: finalize backend connectivity for phase 3&#10;&#10;Implemented account retrieval endpoints and unlocked CORS/Security for frontend integration.">
+      <option name="closed" value="true" />
+      <created>1775146862104</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1775146862104</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Setup done." />
     <MESSAGE value="setup: complete phase 1 of sentinel-ledger core&#10;&#10;Established the data access layer including PostgreSQL mapping for accounts and the audit trail (journal entries)." />
-    <option name="LAST_COMMIT_MESSAGE" value="setup: complete phase 1 of sentinel-ledger core&#10;&#10;Established the data access layer including PostgreSQL mapping for accounts and the audit trail (journal entries)." />
+    <MESSAGE value="feat: finalize backend connectivity for phase 3&#10;&#10;Implemented account retrieval endpoints and unlocked CORS/Security for frontend integration." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: finalize backend connectivity for phase 3&#10;&#10;Implemented account retrieval endpoints and unlocked CORS/Security for frontend integration." />
   </component>
 </project>

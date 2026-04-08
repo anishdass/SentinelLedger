@@ -43,7 +43,7 @@ public class LedgerService {
 
 //        Create double entry journal records
         createJournalEntry(fromAccount, amount.negate(), "Transfer to "+toAccount.getName(), reference);
-        createJournalEntry(fromAccount, amount.negate(), "Tranfer from "+fromAccount.getName(), reference);
+        createJournalEntry(toAccount, amount, "Transfer from "+fromAccount.getName(), reference);
     }
 
     private void createJournalEntry(Account account, BigDecimal amount, String desc, String ref){

@@ -2,6 +2,8 @@ package com.sentinel.ledger.controller;
 
 import com.sentinel.ledger.dto.TransferRequest;
 import com.sentinel.ledger.entity.Account;
+import com.sentinel.ledger.entity.JournalEntry;
+import com.sentinel.ledger.repository.JournalEntryRepository;
 import com.sentinel.ledger.service.LedgerService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -15,6 +17,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class LedgerController {
     private final LedgerService ledgerService;
+    private final JournalEntryRepository journalEntryRepository;
 
     @PostMapping("/transfer")
     public ResponseEntity<String> performTransfer(@Valid @RequestBody TransferRequest request){
@@ -31,5 +34,14 @@ public class LedgerController {
     @GetMapping("/accounts")
     public ResponseEntity<List<Account>> getAllAccounts(){
         return ResponseEntity.ok(ledgerService.findAllAccounts());
+    }
+
+    @GetMapping("/transactions")
+    public ResponseEntity<List<JournalEntry>> getAllTransactions(){
+        return ResponseEntity.ok(journalEntryRepository.findAll()
+                .stream()
+                .sorted((a, b) -> b.getCreatedAt().compareTo(a.getCreatedAt()))
+                .toList()
+        );
     }
 }
